@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Password Vault</title>
+  <link rel="stylesheet" href="../css/vault.css" />
+</head>
+<body>
+  <div class="header">
+    <h1>Password Vault</h1>
+    <p>Securely store and manage all your passwords in one place</p>
+  </div>
+  <div class="note">
+    <strong>Security Note:</strong> This is a demo application. In production, passwords should be encrypted and proper security measures implemented.
+  </div>
+
+  <div id="message" style="color: yellow; margin: 1rem 0;"></div>
+
+  <div class="add-section">
+    <button id="toggle-add-btn" class="add-button">+ Add New Password</button>
+
+    <div id="add-fields" style="display: none; flex-direction: column; gap: 0.5rem;">
+      <input id="website" type="text" placeholder="Website name" />
+      <input id="email" type="text" placeholder="Email" />
+      <input id="password" type="text" placeholder="Password" />
+      <div>
+        <button class="add-button" id="add-entry-btn">Add Password</button>
+        <button class="add-button hide-btn" style="background: #ef4444;">Hide</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="entries"></div>
+  <button class="add-button logout-btn" style="background:#ef4444;">Logout</button>
+
+  <script src="../js/vault.js"></script>
+</body>
+</html>
