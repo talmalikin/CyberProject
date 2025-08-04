@@ -1,4 +1,4 @@
-# SECURITY.md — Security Documentation
+# SECURITY.md — main.go Security Documentation
 
 ## 1. Application Description and Components
 
